@@ -15,3 +15,5 @@ FinTrack is a stock and crypto market tracker which allows users to settle down 
 - **As an user, I want to set up alerts, so that I do not have to be looking into my active eternaly**
   - Priority: 3 -> *Same as with the last one*
   - Estimate: 2 -> *If everything untill this point is working, It will not be hard to implement*
+
+**Juan Calle Agundez**
