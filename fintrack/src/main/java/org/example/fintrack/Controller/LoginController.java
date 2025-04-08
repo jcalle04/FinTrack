@@ -17,7 +17,7 @@ public class LoginController {
     @GetMapping("/login")
     public String showLoginForm(Model model) {
         model.addAttribute("loginForm", new LoginForm());
-        return "login";
+        return "index";
     }
 
     @PostMapping("/login")
@@ -25,12 +25,11 @@ public class LoginController {
         User user = userRepository.findByEmail(form.getEmail());
 
         if (user != null && user.getPassword().equals(form.getPassword())) {
-            // Password matched
             return "redirect:/home";
         }
 
         model.addAttribute("error", "Invalid email or password");
-        return "login";
+        return "index";
     }
 
     @GetMapping("/home")
