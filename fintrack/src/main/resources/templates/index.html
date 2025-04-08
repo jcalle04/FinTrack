@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Login | Fintrack</title>
+    <link rel="stylesheet" th:href="@{/css/login.css}">
+</head>
+<body>
+<div class="container">
+    <div class="login-box">
+        <form th:action="@{/login}" method="post">
+            <label for="email">Email</label>
+            <div></div>
+            <input type="email" id="email" name="email" placeholder="example@example.com" required>
+            <div></div>
+            <label for="password">Password</label>
+            <div></div>
+            <input type="password" id="password" name="password" placeholder="************" required>
+
+            <button type="submit" class="btn">Sign In</button>
+
+            <a href="#" class="forgot-link">Forgot your password?</a>
+
+            <div class="google-login">
+                <img src="/css/images/google.png" alt="Google Logo">
+                <div></div>
+                <span>Sing up with Google</span>
+            </div>
+        </form>
+    </div>
+
+    <div class="promo-box">
+        <div class="promo-text">You do not have a portfolio yet?<br>Start tracking today!</div>
+        <button class="accountbtn">Create an account</button>
+        <img src="/css/images/Tracky%205.png" alt="Fintrack Mascot" class="mascot">
+    </div>
+</div>
+</body>
+</html>
