@@ -29,7 +29,7 @@ public class LoginController {
         }
 
         model.addAttribute("error", "Invalid email or password");
-        return "index";
+        return "register";
     }
 
     @GetMapping("/home")

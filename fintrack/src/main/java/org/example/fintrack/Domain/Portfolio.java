@@ -20,7 +20,7 @@ public class Portfolio {
 
     private String name;
 
-    @OneToMany(mappedBy = "asset", cascade = CascadeType.ALL, fetch = FetchType.LAZY)
+    @OneToMany(mappedBy = "portfolio", cascade = CascadeType.ALL, fetch = FetchType.LAZY)
     private List<Asset> assets = new ArrayList<>();
 
     private Float profit;
