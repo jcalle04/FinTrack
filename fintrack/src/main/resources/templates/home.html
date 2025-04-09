@@ -2,9 +2,26 @@
 <html lang="en" xmlns:th="http://www.thymeleaf.org">
 <head>
     <meta charset="UTF-8">
-    <title>Home | FinTrack</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home - Trending Stocks & Cryptos</title>
 </head>
 <body>
-    <h2>Welcome Page</h2>
+<h1>Welcome to the Home Page</h1>
+
+<h2>Trending Stocks</h2>
+<ul>
+    <!-- Loop through the trending stocks and display them -->
+    <th:block th:each="stock : ${trendingStocks}">
+        <li th:text="${stock}"></li>
+    </th:block>
+</ul>
+
+<h2>Trending Cryptos</h2>
+<ul>
+    <!-- Loop through the trending cryptos and display them -->
+    <th:block th:each="crypto : ${trendingCryptos}">
+        <li th:text="${crypto}"></li>
+    </th:block>
+</ul>
 </body>
 </html>

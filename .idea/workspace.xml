@@ -5,13 +5,21 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="65bdcd03-47a7-43fe-a14d-37adaad29f80" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/fintrack/src/main/resources/static/css/register.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/fintrack/src/main/resources/templates/home.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/fintrack/src/main/java/org/example/fintrack/Controller/HomeController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/fintrack/src/main/java/org/example/fintrack/Controller/MarketController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/fintrack/src/main/java/org/example/fintrack/Domain/RegisterForm.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/fintrack/src/main/java/org/example/fintrack/Service/MarketDataService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/fintrack/src/main/java/org/example/fintrack/Service/TrendingMarketDataService.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/fintrack/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/fintrack/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/fintrack/src/main/java/org/example/fintrack/Controller/LoginController.java" beforeDir="false" afterPath="$PROJECT_DIR$/fintrack/src/main/java/org/example/fintrack/Controller/LoginController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/fintrack/src/main/java/org/example/fintrack/Domain/Asset.java" beforeDir="false" afterPath="$PROJECT_DIR$/fintrack/src/main/java/org/example/fintrack/Domain/Asset.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/fintrack/src/main/java/org/example/fintrack/Domain/Portfolio.java" beforeDir="false" afterPath="$PROJECT_DIR$/fintrack/src/main/java/org/example/fintrack/Domain/Portfolio.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/fintrack/src/main/resources/static/css/login.css" beforeDir="false" afterPath="$PROJECT_DIR$/fintrack/src/main/resources/static/css/login.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/fintrack/src/main/java/org/example/fintrack/Controller/RegisterController.java" beforeDir="false" afterPath="$PROJECT_DIR$/fintrack/src/main/java/org/example/fintrack/Controller/RegisterController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/fintrack/src/main/java/org/example/fintrack/Domain/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/fintrack/src/main/java/org/example/fintrack/Domain/User.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/fintrack/src/main/java/org/example/fintrack/FintrackApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/fintrack/src/main/java/org/example/fintrack/FintrackApplication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/fintrack/src/main/java/org/example/fintrack/Service/UserService.java" beforeDir="false" afterPath="$PROJECT_DIR$/fintrack/src/main/java/org/example/fintrack/Service/UserService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/fintrack/src/main/java/org/example/fintrack/Service/UserServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/fintrack/src/main/java/org/example/fintrack/Service/UserServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/fintrack/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/fintrack/src/main/resources/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/fintrack/src/main/resources/templates/home.html" beforeDir="false" afterPath="$PROJECT_DIR$/fintrack/src/main/resources/templates/home.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/fintrack/src/main/resources/templates/register.html" beforeDir="false" afterPath="$PROJECT_DIR$/fintrack/src/main/resources/templates/register.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -22,8 +30,9 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Class" />
         <option value="HTML File" />
+        <option value="Interface" />
+        <option value="Class" />
       </list>
     </option>
   </component>
@@ -87,6 +96,8 @@
       <workItem from="1744146657762" duration="1214000" />
       <workItem from="1744185479929" duration="734000" />
       <workItem from="1744194464393" duration="1965000" />
+      <workItem from="1744213603263" duration="7839000" />
+      <workItem from="1744232117365" duration="1005000" />
     </task>
     <servers />
   </component>

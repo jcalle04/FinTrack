@@ -23,7 +23,10 @@ public class User {
     private String username;
     private String name;
     private String surname;
+
+    @Column(unique = true)
     private String email;
+
     private String password;
 
     @OneToMany(mappedBy = "user", cascade = CascadeType.ALL, fetch = FetchType.LAZY)
