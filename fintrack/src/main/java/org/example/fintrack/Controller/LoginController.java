@@ -12,22 +12,18 @@ import org.springframework.web.bind.annotation.*;
 @Controller
 public class LoginController {
 
-    @Autowired
-    private UserService userService;
-
     @GetMapping("/login")
-    public String showLoginForm(Model model) {
-        model.addAttribute("loginForm", new LoginForm());
-        return "index";
-    }
+    public String loginPage(@RequestParam(value = "error", required = false) String error,
+                            @RequestParam(value = "logout", required = false) String logout,
+                            Model model) {
 
-    @PostMapping("/login")
-    public String processLogin(@ModelAttribute("loginForm") LoginForm form, Model model) {
-
-        if (userService.authenticate(form.getEmail(), form.getPassword())) {
-            return "home";
+        if (error != null) {
+            model.addAttribute("error", "Invalid username or password.");
+        }
+        if (logout != null) {
+            model.addAttribute("message", "You have been logged out.");
         }
 
-        return "register";
+        return "index";
     }
 }

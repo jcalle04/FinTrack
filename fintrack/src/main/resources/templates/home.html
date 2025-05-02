@@ -3,25 +3,53 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Home - Trending Stocks & Cryptos</title>
+    <title>FinTrack - Portfolio App</title>
+    <link rel="stylesheet" th:href="@{/css/home.css}">
 </head>
 <body>
-<h1>Welcome to the Home Page</h1>
+<header class="top-bar">
+    <h2 class="welcome-text">Welcome back!</h2>
 
-<h2>Trending Stocks</h2>
-<ul>
-    <!-- Loop through the trending stocks and display them -->
-    <th:block th:each="stock : ${trendingStocks}">
-        <li th:text="${stock}"></li>
-    </th:block>
-</ul>
+    <div class="logo-container">
+        <img src="/css/images/Tracky.png" alt="FinTrack Logo" class="logo" />
+    </div>
+    <div class="nav-buttons">
+        <button class="nav-btn">Portfolios</button>
+        <button class="nav-btn">Settings</button>
+        <img src="/css/images/Tracky%20Profile.png" alt="Profile" class="profile"/>
+    </div>
+</header>
 
-<h2>Trending Cryptos</h2>
-<ul>
-    <!-- Loop through the trending cryptos and display them -->
-    <th:block th:each="crypto : ${trendingCryptos}">
-        <li th:text="${crypto}"></li>
-    </th:block>
-</ul>
+<main class="main-content">
+
+    <section class="overview">
+        <h3 class="overview-title">Overview</h3>
+        <div class="controls">
+            <select class="filter-dropdown">
+                <option>Filter by</option>
+            </select>
+            <button class="watchlist-btn">watchlist</button>
+            <input type="text" placeholder="Find new opportunities" class="search-bar" />
+        </div>
+
+        <div class="section-list">
+            <h4>Trending Stocks</h4>
+            <ul class="item-list">
+                <li th:each="stock : ${stocks}">
+                    <strong th:text="${stock.symbol}">Symbol</strong> -
+                    <span th:text="${stock.description}">Description</span>
+                </li>
+            </ul>
+
+            <h4>Trending Cryptos</h4>
+            <ul class="item-list">
+                <li th:each="crypto : ${trendingCryptos}">
+                    <strong th:text="${crypto.symbol}">Symbol</strong> -
+                    <span th:text="${crypto.description}">Description</span>
+                </li>
+            </ul>
+        </div>
+    </section>
+</main>
 </body>
 </html>

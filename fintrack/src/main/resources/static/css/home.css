@@ -1,0 +1,142 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #ffe0b3;
+    color: #333;
+    padding: 0;
+}
+
+.top-bar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #ffe0b3;
+    padding: 20px 32px;
+}
+
+.logo-container {
+    display: flow;
+    align-items: center;
+    gap: 12px;
+}
+
+.profile {
+    width: 75px;
+    height: 75px;
+}
+
+.logo {
+    width: 150px;
+    height: 150px;
+}
+
+.app-title {
+    font-size: 36px;
+    font-weight: bold;
+}
+
+.app-title span {
+    font-size: 12px;
+    display: block;
+    color: #555;
+}
+
+.nav-buttons {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.nav-btn {
+    padding: 8px 16px;
+    background-color: #ffd580;
+    border: 2px solid #333;
+    border-radius: 8px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+}
+
+.nav-btn:hover {
+    background-color: #f5f5f5;
+}
+
+.main-content {
+    padding: 32px;
+}
+
+.welcome-text {
+    font-size: 36px;
+    font-weight: 700;
+    margin-bottom: 32px;
+}
+
+.overview {
+    background-color: #fffbe6;
+    padding: 24px;
+    border-radius: 16px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+}
+
+.overview-title {
+    font-size: 24px;
+    font-weight: 700;
+    border-bottom: 4px solid orange;
+    display: inline-block;
+    margin-bottom: 20px;
+}
+
+.controls {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    margin-bottom: 24px;
+}
+
+.filter-dropdown,
+.watchlist-btn,
+.search-bar {
+    padding: 10px 16px;
+    font-size: 14px;
+    border: 1px solid #aaa;
+    border-radius: 10px;
+    outline: none;
+}
+
+.watchlist-btn {
+    background-color: #ffd580;
+    font-weight: 600;
+    border: 2px solid #333;
+}
+
+.search-bar {
+    flex-grow: 1;
+}
+
+.section-list h4 {
+    font-size: 20px;
+    margin: 24px 0 8px;
+}
+
+.item-list {
+    list-style-type: none;
+    padding-left: 0;
+    margin-bottom: 24px;
+}
+
+.item-list li {
+    padding: 10px;
+    font-size: 16px;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    margin-bottom: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.04);
+}
+

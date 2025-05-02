@@ -5,22 +5,20 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="65bdcd03-47a7-43fe-a14d-37adaad29f80" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/fintrack/src/main/java/org/example/fintrack/Controller/HomeController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/fintrack/src/main/java/org/example/fintrack/Controller/MarketController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/fintrack/src/main/java/org/example/fintrack/Domain/RegisterForm.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/fintrack/src/main/java/org/example/fintrack/Service/MarketDataService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/fintrack/src/main/java/org/example/fintrack/Service/TrendingMarketDataService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/fintrack/src/main/java/org/example/fintrack/Security/CustomUserDetailsService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/fintrack/src/main/java/org/example/fintrack/Security/SecurityConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/fintrack/src/main/resources/static/css/home.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/fintrack/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/fintrack/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/fintrack/src/main/java/org/example/fintrack/Controller/HomeController.java" beforeDir="false" afterPath="$PROJECT_DIR$/fintrack/src/main/java/org/example/fintrack/Controller/HomeController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/fintrack/src/main/java/org/example/fintrack/Controller/LoginController.java" beforeDir="false" afterPath="$PROJECT_DIR$/fintrack/src/main/java/org/example/fintrack/Controller/LoginController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/fintrack/src/main/java/org/example/fintrack/Controller/RegisterController.java" beforeDir="false" afterPath="$PROJECT_DIR$/fintrack/src/main/java/org/example/fintrack/Controller/RegisterController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/fintrack/src/main/java/org/example/fintrack/Domain/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/fintrack/src/main/java/org/example/fintrack/Domain/User.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/fintrack/src/main/java/org/example/fintrack/FintrackApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/fintrack/src/main/java/org/example/fintrack/FintrackApplication.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/fintrack/src/main/java/org/example/fintrack/Service/UserService.java" beforeDir="false" afterPath="$PROJECT_DIR$/fintrack/src/main/java/org/example/fintrack/Service/UserService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/fintrack/src/main/java/org/example/fintrack/Repository/UserRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/fintrack/src/main/java/org/example/fintrack/Repository/UserRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/fintrack/src/main/java/org/example/fintrack/Service/TrendingMarketDataService.java" beforeDir="false" afterPath="$PROJECT_DIR$/fintrack/src/main/java/org/example/fintrack/Service/TrendingMarketDataService.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/fintrack/src/main/java/org/example/fintrack/Service/UserServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/fintrack/src/main/java/org/example/fintrack/Service/UserServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/fintrack/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/fintrack/src/main/resources/application.properties" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/fintrack/src/main/resources/templates/home.html" beforeDir="false" afterPath="$PROJECT_DIR$/fintrack/src/main/resources/templates/home.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/fintrack/src/main/resources/templates/register.html" beforeDir="false" afterPath="$PROJECT_DIR$/fintrack/src/main/resources/templates/register.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/fintrack/src/main/resources/templates/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/fintrack/src/main/resources/templates/index.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -33,6 +31,7 @@
         <option value="HTML File" />
         <option value="Interface" />
         <option value="Class" />
+        <option value="CSS File" />
       </list>
     </option>
   </component>
@@ -54,28 +53,39 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;ASKED_SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
-    &quot;DefaultHtmlFileTemplate&quot;: &quot;HTML File&quot;,
-    &quot;RequestMappingsPanelOrder0&quot;: &quot;0&quot;,
-    &quot;RequestMappingsPanelOrder1&quot;: &quot;1&quot;,
-    &quot;RequestMappingsPanelWidth0&quot;: &quot;75&quot;,
-    &quot;RequestMappingsPanelWidth1&quot;: &quot;75&quot;,
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;Spring Boot.FintrackApplication.executor&quot;: &quot;Run&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
-    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;reference.settings.project.maven.importing&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "ASKED_SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "DefaultHtmlFileTemplate": "HTML File",
+    "RequestMappingsPanelOrder0": "0",
+    "RequestMappingsPanelOrder1": "1",
+    "RequestMappingsPanelWidth0": "75",
+    "RequestMappingsPanelWidth1": "75",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "Spring Boot.FintrackApplication.executor": "Run",
+    "git-widget-placeholder": "main",
+    "kotlin-language-version-configured": "true",
+    "list.type.of.created.stylesheet": "CSS",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "settings.editor.selected.configurable": "reference.settings.project.maven.importing",
+    "vue.rearranger.settings.migration": "true"
+  },
+  "keyToStringList": {
+    "DatabaseDriversLRU": [
+      "mysql"
+    ]
   }
-}</component>
+}]]></component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\Juan\Documents\GitHub\FinTrack\fintrack\src\main\java\org\example\fintrack" />
+    </key>
+  </component>
   <component name="RunManager">
     <configuration name="FintrackApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
       <module name="fintrack" />
@@ -98,6 +108,12 @@
       <workItem from="1744194464393" duration="1965000" />
       <workItem from="1744213603263" duration="7839000" />
       <workItem from="1744232117365" duration="1005000" />
+      <workItem from="1744233159960" duration="106000" />
+      <workItem from="1744267128870" duration="31000" />
+      <workItem from="1744276640020" duration="2267000" />
+      <workItem from="1744551509556" duration="14000" />
+      <workItem from="1745933029050" duration="5341000" />
+      <workItem from="1746164839371" duration="7562000" />
     </task>
     <servers />
   </component>

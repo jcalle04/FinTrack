@@ -26,11 +26,11 @@ public class RegisterController {
     @PostMapping("/register")
     public String processRegister(@ModelAttribute("registerForm") RegisterForm form, Model model) {
 
-        if(userService.authenticateRegister(form.getEmail(), form.getPassword(), form.getRepeatPassword())) {
-            userService.createUser(form.getEmail(), form.getPassword());
-            return "index";
-        }
+      if(userService.authenticateRegister(form.getEmail(), form.getPassword(), form.getRepeatPassword())) {
 
-        return "register";
+            userService.createUser(form.getEmail(), form.getPassword());
+
+      }
+        return "index";
     }
 }

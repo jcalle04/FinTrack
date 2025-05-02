@@ -2,11 +2,16 @@ package org.example.fintrack.Controller;
 
 import org.example.fintrack.Service.TrendingMarketDataService;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.security.core.userdetails.UserDetails;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.security.core.Authentication;
+
+
 
 import java.util.List;
+import java.util.Map;
 
 @Controller
 public class HomeController {
@@ -18,13 +23,18 @@ public class HomeController {
     }
 
     @GetMapping("/home")
-    public String getHomePage(Model model) {
-        List<String> trendingStocks = trendingMarketDataService.getTrendingStocks();
-        List<String> trendingCryptos = trendingMarketDataService.getTrendingCryptos();
+    public String getHomePage(Model model, Authentication authentication) {
 
-        model.addAttribute("trendingStocks", trendingStocks);
-        model.addAttribute("trendingCryptos", trendingCryptos);
+        UserDetails userDetails = (UserDetails) authentication.getPrincipal();
+        String username = userDetails.getUsername();
 
-        return "home";  // This is the view name for the home page
+        model.addAttribute("username", username);
+        List<Map<String, Object>> stocks = trendingMarketDataService.getAllUsStocks();
+        List<Map<String, Object>> trendingCryptos = trendingMarketDataService.getTrendingCryptos();
+
+        model.addAttribute("stocks", stocks.subList(0, 10));
+        model.addAttribute("trendingCryptos", trendingCryptos.subList(0, 10));
+
+        return "home";
     }
 }
