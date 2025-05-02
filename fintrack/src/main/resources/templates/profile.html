@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Profile - FinTrack</title>
+    <link rel="stylesheet" href="/css/profile.css" />
+</head>
+<body>
+<div class="profile-container">
+    <div class="profile-card">
+        <img src="/css/images/Tracky%20Profile.png" alt="Profile Picture" class="avatar">
+        <h2>
+            <span th:text="${Username}">User1234</span>
+            <span class="edit-icon">✎</span>
+        </h2>
+        <p class="member-since">Member since 2025</p>
+    </div>
+
+    <div class="info-card">
+        <div class="info-field">
+            <label>Email</label>
+            <p th:text="${Email}">user@notanemail.com</p>
+        </div>
+
+        <div class="info-field">
+            <label>Password</label>
+            <div class="password-wrapper">
+                <p class="password">***************</p>
+                <span class="eye-icon">👁️</span>
+            </div>
+        </div>
+
+        <div class="info-field">
+            <label>Name <span class="edit-icon">✎</span></label>
+            <p th:text="${Name}">User</p>
+        </div>
+
+        <div class="info-field">
+            <label>Surname <span class="edit-icon">✎</span></label>
+            <p th:text="${Surname}">Suruser</p>
+        </div>
+    </div>
+</div>
+</body>
+</html>

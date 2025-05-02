@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Portfolios</title>
+    <link rel="stylesheet" href="/css/portfolios.css">
+</head>
+<body>
+
+<div class="header">
+    <img src="/css/images/Tracky%204.png" alt="Mascot Talking" class="mascot-talk">
+    <h1>Portfolios</h1>
+    <div class="settings">
+        <a href="/settings">Settings</a>
+        <img src="/css/images/Tracky%20Profile.png" alt="Profile" class="profile-img" onclick="window.location.href='/profile'">
+    </div>
+</div>
+
+<div class="content">
+    <h2 class="my-stuff">My stuff</h2>
+    <p class="click-hint">Click to see the details!!</p>
+
+    <div th:each="portfolio : ${PortfolioList}" class="portfolio-card" th:onclick="'window.location.href=\'/portfolio/' + ${portfolio.id} + '\''">
+        <div class="portfolio-name" th:text="${portfolio.name}">My Portfolio</div>
+        <div class="portfolio-value">
+            <span th:text="${portfolio.costBasis} + '€'">100€</span>
+        </div>
+        <div class="portfolio-diff" th:classappend="${portfolio.profit >= 0} ? 'positive' : 'negative'" th:text="${portfolio.profit} + '€'">+0.00€</div>
+        <img th:src="${portfolio.profit >= 0 ? '/css/images/Tracky%20earning.png' : '/css/images/Tracky%20Scared.png'}" alt="Icon" class="portfolio-icon">
+    </div>
+
+    <div class="buttons">
+        <button onclick="location.href='/portfolio/add'">Add</button>
+        <button onclick="location.href='/portfolio/delete'">Delete</button>
+    </div>
+
+    <div class="total">
+        <span>Total:</span>
+        <span class="portfolio-diff" th:classappend="${Total >= 0} ? 'positive' : 'negative'" th:text="${Total} + '€'">0.00€</span>
+    </div>
+</div>
+
+</body>
+</html>

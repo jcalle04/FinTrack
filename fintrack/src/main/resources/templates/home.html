@@ -14,9 +14,13 @@
         <img src="/css/images/Tracky.png" alt="FinTrack Logo" class="logo" />
     </div>
     <div class="nav-buttons">
-        <button class="nav-btn">Portfolios</button>
+        <a th:href="portfolios">
+            <button th:href="portfolios" class="nav-btn">Portfolios</button>
+        </a>
         <button class="nav-btn">Settings</button>
-        <img src="/css/images/Tracky%20Profile.png" alt="Profile" class="profile"/>
+        <a th:href="profile">
+            <img src="/css/images/Tracky%20Profile.png" alt="Profile" class="profile"/>
+        </a>
     </div>
 </header>
 

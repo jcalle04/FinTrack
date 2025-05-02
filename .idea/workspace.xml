@@ -5,20 +5,21 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="65bdcd03-47a7-43fe-a14d-37adaad29f80" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/fintrack/src/main/java/org/example/fintrack/Security/CustomUserDetailsService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/fintrack/src/main/java/org/example/fintrack/Security/SecurityConfig.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/fintrack/src/main/resources/static/css/home.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/fintrack/src/main/java/org/example/fintrack/Controller/ProfileController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/fintrack/src/main/java/org/example/fintrack/Repository/PortoflioRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/fintrack/src/main/resources/static/css/portfolios.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/fintrack/src/main/resources/static/css/profile.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/fintrack/src/main/resources/templates/portfolios.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/fintrack/src/main/resources/templates/profile.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/fintrack/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/fintrack/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/fintrack/src/main/java/org/example/fintrack/Controller/HomeController.java" beforeDir="false" afterPath="$PROJECT_DIR$/fintrack/src/main/java/org/example/fintrack/Controller/HomeController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/fintrack/src/main/java/org/example/fintrack/Controller/LoginController.java" beforeDir="false" afterPath="$PROJECT_DIR$/fintrack/src/main/java/org/example/fintrack/Controller/LoginController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/fintrack/src/main/java/org/example/fintrack/Controller/RegisterController.java" beforeDir="false" afterPath="$PROJECT_DIR$/fintrack/src/main/java/org/example/fintrack/Controller/RegisterController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/fintrack/src/main/java/org/example/fintrack/Domain/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/fintrack/src/main/java/org/example/fintrack/Domain/User.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/fintrack/src/main/java/org/example/fintrack/Controller/PortfolioController.java" beforeDir="false" afterPath="$PROJECT_DIR$/fintrack/src/main/java/org/example/fintrack/Controller/PortfolioController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/fintrack/src/main/java/org/example/fintrack/Repository/UserRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/fintrack/src/main/java/org/example/fintrack/Repository/UserRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/fintrack/src/main/java/org/example/fintrack/Service/TrendingMarketDataService.java" beforeDir="false" afterPath="$PROJECT_DIR$/fintrack/src/main/java/org/example/fintrack/Service/TrendingMarketDataService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/fintrack/src/main/java/org/example/fintrack/Service/PortfolioService.java" beforeDir="false" afterPath="$PROJECT_DIR$/fintrack/src/main/java/org/example/fintrack/Service/PortfolioService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/fintrack/src/main/java/org/example/fintrack/Service/PortfolioServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/fintrack/src/main/java/org/example/fintrack/Service/PortfolioServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/fintrack/src/main/java/org/example/fintrack/Service/UserService.java" beforeDir="false" afterPath="$PROJECT_DIR$/fintrack/src/main/java/org/example/fintrack/Service/UserService.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/fintrack/src/main/java/org/example/fintrack/Service/UserServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/fintrack/src/main/java/org/example/fintrack/Service/UserServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/fintrack/src/main/resources/static/css/home.css" beforeDir="false" afterPath="$PROJECT_DIR$/fintrack/src/main/resources/static/css/home.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/fintrack/src/main/resources/templates/home.html" beforeDir="false" afterPath="$PROJECT_DIR$/fintrack/src/main/resources/templates/home.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/fintrack/src/main/resources/templates/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/fintrack/src/main/resources/templates/index.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -29,8 +30,8 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="HTML File" />
-        <option value="Interface" />
         <option value="Class" />
+        <option value="Interface" />
         <option value="CSS File" />
       </list>
     </option>
@@ -113,7 +114,7 @@
       <workItem from="1744276640020" duration="2267000" />
       <workItem from="1744551509556" duration="14000" />
       <workItem from="1745933029050" duration="5341000" />
-      <workItem from="1746164839371" duration="7562000" />
+      <workItem from="1746164839371" duration="15926000" />
     </task>
     <servers />
   </component>
